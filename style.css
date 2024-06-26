@@ -7,6 +7,26 @@ body {
 
 }
 
+.aspas{
+    position: absolute;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.aspas-img{
+    position: absolute;
+    width: 200px;
+    margin-left: 1400px;
+    opacity: 0%;
+}
+
+.aspas:active{
+    background-color: seagreen;
+}
+
 .cabecalho {
     background-color: white;
     color: white;
