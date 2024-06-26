@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3º TDS</title>
+    <title>USE A CRIATIVIDADE</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,9 +16,9 @@
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="icones/cecilia.png" alt="logo do Cecilia">
         <ul class="cabecalho-lista">
-            <li class="aspas"><a href="aspas.html">ASPAS</a></li>
             <li class="cabecalho-lista-item"><a href="#escola">Escola Cecília Meireles</a></li>
             <li class="cabecalho-lista-item"><a href="#estudante">Estudante</a></li>
+            <button class="aspas"></button>
         </ul>
     </header>
     <section id="escola">
@@ -33,6 +33,7 @@
                         <img class="escola-imagem" src="icones/professora.png" alt="imagem que representa uma professora em sala de aula">
                 </div>
         </div>
+        <img class="aspas-img" src="ASPAS/aspas.png" alt="aspas">
 
     </section>
 
@@ -206,6 +207,23 @@
         <h1>(46) 3547-1308</h1>
         <h1>3º A TDS</h1>
     </footer>
+    <script>
+        let ativo = false;
+        let botao = document.body.querySelector("button.aspas");
+
+        botao.addEventListener("click", aspas)
+        function aspas(){
+                var aspas = document.body.querySelector("img.aspas-img").style;
+                if(!ativo){
+                        aspas.opacity = "100%";
+                        ativo = true;
+                }
+                else{
+                        aspas.opacity = "0%";
+                        ativo = false;
+                }
+        }
+    </script>
 </body>
 
 </html>
